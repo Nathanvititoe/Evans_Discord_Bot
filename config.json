@@ -1,0 +1,52 @@
+{
+  "upload_parent_channel_id": 1454485373953638502,
+  "claimed_parent_channel_id": 1454487673866682529,
+  "verify_channel_id": 1457031566378274837,
+  "unverified_role_id": 1457030662623203439,
+  "verified_role_id": 1457030975963004968,
+
+  "selection_channels": {
+    "N": 1454478168248287262,
+    "S": 1454685222967971985
+  },
+
+  "upload_threads": {
+    "raw_nsfw": "Raw NSFW",
+    "wm_nsfw": "WM NSFW",
+    "raw_sfw": "Raw SFW",
+    "wm_sfw": "WM SFW"
+  },
+
+  "staff_roles": [
+    "Owner",
+    "Admin",
+    "Mod",
+    "Moderator",
+    "Staff"
+  ],
+
+  "winner_role_prefix": "Winner",
+
+  "upload": {
+    "history_limit": 800,
+    "send_delay": 1.1
+  },
+
+  "claim_emojis": [
+    "✅",
+    "☑️",
+    "✔️",
+    "👍",
+    "🔥",
+    "💯",
+    "🙌",
+    "❤️",
+    "⭐",
+    "✨"
+  ],
+
+  "help_channel_id": 1455763216813789266,
+  "help_auto_pin": true,
+
+  "audit_channel_id": 0
+}
