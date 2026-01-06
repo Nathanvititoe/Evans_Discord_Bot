@@ -1,0 +1,21 @@
+services:
+  filewatcher:
+    build: .
+    container_name: filewatcher
+    env_file:
+      - ../.env
+
+      # paths within the container
+    environment:
+      PYTHONPATH: /app
+      NSFW_WATCH_DIR: /watched/nsfw
+      SFW_WATCH_DIR: /watched/sfw
+      HOST_UID: ${HOST_UID:-1000}
+      HOST_GID: ${HOST_GID:-1000}
+
+    # volume mounts host_location:container_location
+    volumes:
+      - ${NSFW_WATCH_PATH:-../watched/nsfw}:/watched/nsfw
+      - ${SFW_WATCH_PATH:-../watched/sfw}:/watched/sfw
+      - .:/app # mount code into container
+    restart: unless-stopped
