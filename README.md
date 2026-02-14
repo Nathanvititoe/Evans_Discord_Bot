@@ -14,3 +14,5 @@ docker logs -f filewatcher
 ```bash
 docker compose down -v
 ```
+
+test change to verify project is still tracked
